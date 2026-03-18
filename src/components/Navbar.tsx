@@ -1,8 +1,10 @@
+import logo from "@/assets/logo.png";
+
 const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
     <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-      <a href="#" className="font-display text-lg font-bold text-foreground tracking-wider">
-        PREDATOR<span className="text-primary">.</span>
+      <a href="#" className="flex items-center">
+        <img src={logo} alt="Team Predators Racing" className="h-10" />
       </a>
       <div className="hidden md:flex items-center gap-8">
         {["Home", "About", "Awards", "Contact"].map((item) => (
